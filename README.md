@@ -27,6 +27,65 @@ Options:
   -v|--verbose    Output full stack trace for failures.
 ```
 
+Input:
+
 ```bash
 $ TCXGenerator -da "2020-12-10 13:00:00" -du "18:23" -c 400 -mhr 187 -ahr 165
+```
+
+Output File:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2">
+  <Activities>
+    <Activity Sport="Other">
+      <Id>2020-12-10T13:00:00</Id>
+      <Lap>
+        <TotalTimeSeconds>1103</TotalTimeSeconds>
+        <Calories>400</Calories>
+        <AverageHeartRateBpm>
+          <Value>165</Value>
+        </AverageHeartRateBpm>
+        <MaximumHeartRateBpm>
+          <Value>187</Value>
+        </MaximumHeartRateBpm>
+        <Intensity>Active</Intensity>
+        <TriggerMethod>Manual</TriggerMethod>
+        <Track>
+          <Trackpoint>
+            <Time>2020-12-10T13:00:00</Time>
+            <HeartRateBpm>
+              <Value>143</Value>
+            </HeartRateBpm>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-12-10T13:04:35.75</Time>
+            <HeartRateBpm>
+              <Value>165</Value>
+            </HeartRateBpm>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-12-10T13:09:11.5</Time>
+            <HeartRateBpm>
+              <Value>165</Value>
+            </HeartRateBpm>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-12-10T13:13:47.25</Time>
+            <HeartRateBpm>
+              <Value>165</Value>
+            </HeartRateBpm>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-12-10T13:18:23</Time>
+            <HeartRateBpm>
+              <Value>187</Value>
+            </HeartRateBpm>
+          </Trackpoint>
+        </Track>
+      </Lap>
+    </Activity>
+  </Activities>
+</TrainingCenterDatabase>
 ```
