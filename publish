@@ -1,0 +1,9 @@
+#! /bin/bash
+
+rm -rf ./out
+rm -rf ./src/bin
+rm -rf ./src/obj
+rm ./src/version
+
+tar -cf - ./src | md5 -r > ./src/version
+dotnet publish ./src -c Release -o ./out -r osx-x64
