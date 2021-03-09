@@ -20,7 +20,7 @@ GetExecutingAssembly().Location);
             app.HelpOption("-?| -h| --help");
             var activityDate = app.Option<string>("-da|--date", "Activity Date ('yyyy-MM-dd HH:mm:ss')", CommandOptionType.SingleValue).IsRequired();
             activityDate.Validators.Add(new DateTimeValidator());
-            var activityDuration = app.Option<string>("-du|--duration", "Activity Duration ('hh:mm')", CommandOptionType.SingleValue).IsRequired();
+            var activityDuration = app.Option<string>("-du|--duration", "Activity Duration ('mm:ss')", CommandOptionType.SingleValue).IsRequired();
             activityDuration.Validators.Add(new DurationValidator());
             var calories = app.Option<int>("-c|--calories", "Calories Expended", CommandOptionType.SingleValue).IsRequired();
             var maxHR = app.Option<int>("-mhr|--maxhr", "Max Heart Rate (BPM)", CommandOptionType.SingleValue).IsRequired();

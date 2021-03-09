@@ -19,7 +19,7 @@ Usage: TCXGenerator [options]
 Options:
   -?|-h|--help    Show help information
   -da|--date      Activity Date ('yyyy-MM-dd HH:mm:ss')
-  -du|--duration  Activity Duration ('hh:mm')
+  -du|--duration  Activity Duration ('mm:ss')
   -c|--calories   Calories Expended
   -mhr|--maxhr    Max Heart Rate (BPM)
   -ahr|--avghr    Average Heart Rate (BPM)
